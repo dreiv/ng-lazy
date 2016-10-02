@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "angular lazy loader",
   "scripts": {
+    "start": "webpack-dev-server --port 8080",
     "postinstall": "typings install"
   },
   "dependencies": {
@@ -20,6 +21,7 @@
   "devDependencies": {
     "angular2-router-loader": "^0.2.2",
     "angular2-template-loader": "^0.4.0",
+    "html-webpack-plugin": "^2.22.0",
     "raw-loader": "^0.5.1",
     "typescript": "^2.0.2",
     "typings": "^1.4.0",
