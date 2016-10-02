@@ -8,9 +8,9 @@ var merge = require('');
 // Common configuration between bundles
 var commonConfig = {
     entry: {
-        'polyfills': './src/polyfills',
-        'vendor': './src/vendor',
-        'app': './src/bootstrap',
+        'polyfills': './src/polyfills.ts',
+        'vendor': './src/vendor.ts',
+        'app': './src/bootstrap.ts',
     },
     resolve: {extensions: ['js', 'ts']},
     module: {
@@ -27,12 +27,13 @@ var commonConfig = {
 
 // Development configuration
 var devConfig = merge(commonConfig, {
+    devtool: 'cheap-module-eval-source-map',
     output: {
         path: root('dist'),
         publicPath: 'http://localhost:8080/',
         filename: '[name].js',
         chunkFilename: '[id].chunk.js'
-    },
+    }
 });
 
 module.exports = devConfig;
