@@ -1,12 +1,9 @@
 import { Component } from "@angular/core";
 
 @Component({
-	selector: 'my-app',
+	selector: 'app',
 	template: `
-	<nav>
-		<a routerLink="/home" routerLinkActive="active">Home</a>
-		<a routerLink="/about" routerLinkActive="active">About (lazy)</a>
-	</nav>
+	<h1>hello world</h1>
 	`
 })
 export class AppComponent {
