@@ -25,6 +25,6 @@
     "typings": "^1.4.0",
     "webpack": "^2.1.0-beta",
     "webpack-dev-server": "^2.1.0-beta",
-    "webpack-merge": "^0.14.0"
+    "webpack-merge": "^0.14.1"
   }
 }
