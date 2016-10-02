@@ -3,14 +3,14 @@
 var path = require('path');
 var inject = require('html-webpack-plugin');
 var webpack = require('webpack');
-var merge = require('');
+var merge = require('webpack-merge');
 
 // Common configuration between bundles
 var commonConfig = {
     entry: {
         'polyfills': './src/polyfills.ts',
         'vendor': './src/vendor.ts',
-        'app': './src/bootstrap.ts',
+        'app': './src/bootstrap.ts'
     },
     resolve: {extensions: ['js', 'ts']},
     module: {
@@ -27,7 +27,6 @@ var commonConfig = {
 
 // Development configuration
 var devConfig = merge(commonConfig, {
-    devtool: 'cheap-module-eval-source-map',
     output: {
         path: root('dist'),
         publicPath: 'http://localhost:8080/',
