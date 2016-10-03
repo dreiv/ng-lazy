@@ -4,6 +4,7 @@
   "description": "angular lazy loader",
   "scripts": {
     "start": "webpack-dev-server --inline --progress --port 8080",
+    "build": "rimraf dist && webpack --progress --profile --bail",
     "postinstall": "typings install"
   },
   "dependencies": {
@@ -19,9 +20,10 @@
   },
   "devDependencies": {
     "angular2-template-loader": "^0.4.0",
+    "awesome-typescript-loader": "^2.2.4",
     "html-webpack-plugin": "^2.22.0",
     "raw-loader": "^0.5.1",
-    "ts-loader": "^0.8.2",
+    "rimraf": "^2.5.4",
     "typescript": "^2.0.2",
     "typings": "^1.4.0",
     "webpack": "^2.1.0-beta",
