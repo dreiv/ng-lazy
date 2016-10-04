@@ -22,7 +22,6 @@
   "devDependencies": {
     "angular2-router-loader": "^0.2.2",
     "angular2-template-loader": "^0.4.0",
-    "awesome-typescript-loader": "^2.2.4",
     "css-loader": "^0.25.0",
     "extract-text-webpack-plugin": "^2.0.0-beta",
     "file-loader": "^0.9.0",
@@ -32,6 +31,7 @@
     "reflect-metadata": "^0.1.8",
     "rimraf": "^2.5.4",
     "style-loader": "^0.13.1",
+    "ts-loader": "^0.8.2",
     "typescript": "^2.0.2",
     "typings": "^1.4.0",
     "webpack": "^2.1.0-beta",
